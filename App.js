@@ -10,7 +10,7 @@ import React, {Component} from 'react';
 import { Text, View } from 'react-native'
 
 type Props = {};
-export default class App extends Component<Props> {
+export default class HelloWorldApp extends Component<Props> {
   render() {
     return (
       <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
