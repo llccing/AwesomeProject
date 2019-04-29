@@ -45,24 +45,26 @@ class DetailScreen extends Component {
   }
 }
 
-// const AppNavigator = createStackNavigator({
-//   Home: HomeScreen,
-//   Details: DetailScreen,
-// }, {
-//   initialRouteName: 'Home'
-//   })
-
-const AppNavigator = createBottomTabNavigator({
+const AppNavigator = createStackNavigator({
   Home: HomeScreen,
   Details: DetailScreen,
 }, {
   initialRouteName: 'Home'
   })
 
+// const AppNavigator = createBottomTabNavigator({
+//   Home: HomeScreen,
+//   Details: DetailScreen,
+// }, {
+//   initialRouteName: 'Home'
+//   })
+
 const AppContainer = createAppContainer(AppNavigator)
 
 export default class App extends Component {
   render() {
-    return <AppContainer />;
+    return (
+      <AppContainer />
+    ) ;
   }
 }
