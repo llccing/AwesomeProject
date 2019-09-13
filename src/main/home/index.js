@@ -34,6 +34,7 @@ class Home extends Component {
       },
       {
         title: 'A weather app',
+        routeName: 'Day2',
         icon: 'logo-sass',
         size: 50,
         style: {
