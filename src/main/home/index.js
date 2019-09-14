@@ -1,27 +1,34 @@
-import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View, ScrollView, Image, Dimensions, TouchableHighlight, Alert } from 'react-native';
+import React, { Component } from 'react'
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  Image,
+  Dimensions,
+  TouchableHighlight,
+  Alert,
+} from 'react-native'
 import { createStackNavigator, createAppContainer } from 'react-navigation'
-import Swiper from 'react-native-swiper';
-import Icon from 'react-native-vector-icons/Ionicons';
-const { width } = Dimensions.get('window');
-
-
+import Swiper from 'react-native-swiper'
+import Icon from 'react-native-vector-icons/Ionicons'
+const { width } = Dimensions.get('window')
 
 class Home extends Component {
   constructor() {
-    super();
-
+    super()
   }
   _onIconPress(item) {
-    if(!item.routeName){
+    if (!item.routeName) {
       Alert.alert('提示', '页面还在开发中……')
-      return; 
+      return
     }
 
     this.props.navigation.navigate(item.routeName)
   }
   render() {
-    var i = 2;
+    var i = 2
     var elements = [
       {
         title: '计时器',
@@ -29,16 +36,16 @@ class Home extends Component {
         icon: 'md-time',
         size: 50,
         style: {
-          color: '#f00',
+          color: '#b030b0',
         },
       },
       {
-        title: 'A weather app',
+        title: '天气预报',
         routeName: 'Day2',
-        icon: 'logo-sass',
+        icon: 'ios-sunny',
         size: 50,
         style: {
-          color: '#f00',
+          color: '#1089ff',
         },
       },
       {
@@ -73,26 +80,31 @@ class Home extends Component {
           color: '#f00',
         },
       },
-    ];
+    ]
 
-    var Boxs = elements.map((item) => {
+    var Boxs = elements.map(item => {
       return (
-        <TouchableHighlight key={item.title} onPress={this._onIconPress.bind(this, item)} underlayColor={'#eee'} style={styles.touchItem}>
+        <TouchableHighlight
+          key={item.title}
+          onPress={this._onIconPress.bind(this, item)}
+          underlayColor={'#eee'}
+          style={styles.touchItem}
+        >
           <View key={item.title} style={styles.boxItem}>
             <Icon name={item.icon} size={item.size} style={[styles.itemImage, item.style]} />
             <Text style={styles.itemTitle}>{item.title}</Text>
           </View>
         </TouchableHighlight>
-      );
-    });
-    
-    let path = '../../static/image/scene/';
+      )
+    })
+
+    let path = '../../static/image/scene/'
     let imageBike = require(`${path}bike.jpg`)
     let imageDog = require(`${path}dog.jpg`)
     let imageGirl = require(`${path}girl.jpg`)
     let imageLove = require(`${path}love.jpg`)
     let imageSouth = require(`${path}south.jpg`)
-    
+
     return (
       <ScrollView style={styles.container}>
         <Swiper height={150} autoplay={true} showsButtons={false}>
@@ -115,7 +127,7 @@ class Home extends Component {
         </Swiper>
         <View style={styles.boxContainer}>{Boxs}</View>
       </ScrollView>
-    );
+    )
   }
 }
 
@@ -135,7 +147,7 @@ const styles = StyleSheet.create({
     borderColor: '#eee',
   },
   boxItem: {
-    width: width / 3 -2,
+    width: width / 3 - 2,
     height: 100,
   },
 
@@ -157,4 +169,4 @@ const styles = StyleSheet.create({
     flex: 1,
     width,
   },
-});
+})

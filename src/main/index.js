@@ -18,7 +18,7 @@ const AppNavigator = createStackNavigator(
     Day2,
   },
   {
-    initialRouteName: 'Day2',
+    initialRouteName: 'Home',
   },
 )
 
