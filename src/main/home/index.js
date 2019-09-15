@@ -10,14 +10,13 @@ import {
   TouchableHighlight,
   Alert,
 } from 'react-native'
-import { createStackNavigator, createAppContainer } from 'react-navigation'
 import Swiper from 'react-native-swiper'
 import Icon from 'react-native-vector-icons/Ionicons'
 const { width } = Dimensions.get('window')
 
-class Home extends Component {
-  constructor() {
-    super()
+export default class Home extends Component {
+  constructor(props) {
+    super(props)
   }
   _onIconPress(item) {
     if (!item.routeName) {
@@ -49,11 +48,12 @@ class Home extends Component {
         },
       },
       {
-        title: 'A weather app2',
-        icon: 'logo-sass',
+        title: 'Twitter',
+        icon: 'logo-twitter',
+        routeName: 'Day3',
         size: 50,
         style: {
-          color: '#f00',
+          color: '#1da1f2',
         },
       },
       {
@@ -130,9 +130,6 @@ class Home extends Component {
     )
   }
 }
-
-export default Home
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -9,6 +9,7 @@ import {
 import Home from './home/'
 import Day1 from './days/day1'
 import Day2 from './days/day2'
+import Day3 from './days/day3/day3'
 
 // iOS默认从右侧滑入，Android从底部淡入。
 const AppNavigator = createStackNavigator(
@@ -16,6 +17,7 @@ const AppNavigator = createStackNavigator(
     Home,
     Day1,
     Day2,
+    Day3,
   },
   {
     initialRouteName: 'Home',
