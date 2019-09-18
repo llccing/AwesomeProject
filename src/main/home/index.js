@@ -75,11 +75,12 @@ export default class Home extends Component {
         },
       },
       {
-        title: 'A weather app5',
-        icon: 'logo-sass',
+        title: 'will update2',
+        icon: 'ios-bicycle',
+        routeName: 'Day6',
         size: 50,
         style: {
-          color: '#f00',
+          color: '#3c9d9b',
         },
       },
     ]
