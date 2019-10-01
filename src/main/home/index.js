@@ -83,6 +83,15 @@ export default class Home extends Component {
           color: '#3c9d9b',
         },
       },
+      {
+        title: 'days7',
+        icon: 'logo-buffer',
+        routeName: 'Day7',
+        size: 50,
+        style: {
+          color: '#00adb5',
+        },
+      },
     ]
 
     var Boxs = elements.map(item => {
