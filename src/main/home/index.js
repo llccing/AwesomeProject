@@ -92,6 +92,15 @@ export default class Home extends Component {
           color: '#00adb5',
         },
       },
+      {
+        title: '侧边栏',
+        icon: 'logo-npm',
+        routeName: 'Day8',
+        size: 50,
+        style: {
+          color: '#fcbad3',
+        },
+      },
     ]
 
     var Boxs = elements.map(item => {
