@@ -84,7 +84,7 @@ export default class Home extends Component {
         },
       },
       {
-        title: 'days7',
+        title: 'Twitter动画效果',
         icon: 'logo-buffer',
         routeName: 'Day7',
         size: 50,
