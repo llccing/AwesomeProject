@@ -4,7 +4,7 @@ node_js:
 install:
   - npm install -g vuepress
 script:
-  - npm run build
+  - npm run docs:build
 cache:
   directories:
     - 'node_modules'
