@@ -1,7 +1,7 @@
 module.exports = {
   title: 'AwesomeProject',
   description: 'React Native实践',
-  base: '/awesomeProject/',
+  base: '/AwesomeProject/',
   themeConfig: {
     lastUpdated: 'Last Updated',
     repo: 'https://github.com/llccing/AwesomeProject',
