@@ -14,9 +14,12 @@
 
 ## 启动
 
-```nodejs
+依赖安装
+```
 yarn
-
+```
+启动
+```
 react-native run-ios
 ```
 
