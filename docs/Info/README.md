@@ -2,7 +2,7 @@
 
 为了快速熟悉React Native语法，同时了解移动端布局，所以开始做这个项目。
 
-![start.gif](http://store.llccing.cn/AwesomeProject/start.gif)
+![start.gif](http://llccing.cn:8000/awesomeProject/start.gif)
 
 感谢 30-days-of-react-native [https://github.com/fangwei716/30-days-of-react-native](https://github.com/fangwei716/30-days-of-react-native)
 
@@ -25,19 +25,19 @@ react-native run-ios
 
 ## Day1 计时器
 
-![day1.gif](http://store.llccing.cn/AwesomeProject/day1.gif)
+![day1.gif](http://llccing.cn:8000/awesomeProject/day1.gif)
 
 主要考验语法、逻辑
 
 ## Day2 天气展示
 
-![day2.gif](http://store.llccing.cn/AwesomeProject/day2.gif)
+![day2.gif](http://llccing.cn:8000/awesomeProject/day2.gif)
 
 主要是针对布局的考察
 
 ## Day3 Twitter演示
 
-![day3.gif](http://store.llccing.cn/AwesomeProject/day3.gif)
+![day3.gif](http://llccing.cn:8000/awesomeProject/day3.gif)
 
 ## Day4 will update
 
@@ -49,7 +49,7 @@ react-native run-ios
 
 ## Day5 地图展示
 
-![day5.gif](http://store.llccing.cn/AwesomeProject/day5.gif)
+![day5.gif](http://llccing.cn:8000/awesomeProject/day5.gif)
 
 
 使用了高德地图。
@@ -58,8 +58,8 @@ react-native run-ios
 
 ## Day7 twitter动画效果
 
-![day7.gif](http://store.llccing.cn/AwesomeProject/day7.gif)
+![day7.gif](http://llccing.cn:8000/awesomeProject/day7.gif)
 
 ## Day8 侧边栏效果
 
-![day8.gif](http://store.llccing.cn/AwesomeProject/day8.gif)
+![day8.gif](http://llccing.cn:8000/awesomeProject/day8.gif)
